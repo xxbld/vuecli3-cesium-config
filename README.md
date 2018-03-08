@@ -1,4 +1,4 @@
-# vuecli3-cesium-config
+# vuecli3-cesium-config(webpack.base.config.js是cli2.x配置)
 vuecli3-cesium-config
 
 ## 1. cli create 
