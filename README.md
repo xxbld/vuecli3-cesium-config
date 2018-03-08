@@ -7,7 +7,7 @@ vuecli3-cesium-config
 npm install cesium --save-dev
 npm install strip-pragma-loader --save-dev
 ```
-## 2. 复制vue.config.js 到跟目录
+## 2. 复制vue.config.js 到根目录
 
 ```js
 var Cesium = require('cesium/Cesium');
