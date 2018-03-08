@@ -1,4 +1,3 @@
-
 const path = require('path')
 const webpack = require('webpack')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
@@ -51,25 +50,25 @@ module.exports = {
       .amd({
         toUrlUndefined: true
       })
+      .module
     // 禁止Cesium警告: require function is used in a way in which dependencies cannot be statically extracted
-    //   .module.set('unknownContextCritical', false).set('unknownContextRegExp', /^.\/.*$/)
+    // .set('unknownContextCritical', false).set('unknownContextRegExp', /^.\/.*$/)
     // strip-pragma-loader 删除编译指示
-    // 这个插件webpack3无法加载可以不用
-    //   .rule()
-    //   .include
-    //   .add(path.resolve(__dirname, cesiumSource))
-    //   .end()
-    //   .post()
-    //   .pre()
-    //   .test(/\.js$/)
-    //   .use('strip')
-    //   .loader('strip-pragma-loader')
-    //   .options({
-    //     pragmas: {
-    //       debug: false
-    //     }
-    //   })
-    //   .end()
-    //   .end()
+      .rule()
+      .include
+      .add(path.resolve(__dirname, cesiumSource))
+      .end()
+      .post()
+      .pre()
+      .test(/\.js$/)
+      .use('strip')
+      .loader('strip-pragma-loader')
+      .options({
+        pragmas: {
+          debug: false
+        }
+      })
+      .end()
+      .end()
   }
 }
