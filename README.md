@@ -1,5 +1,7 @@
-# vuecli3-cesium-config(webpack.base.config.js是cli2.x配置)
+# vuecli3-cesium-config
+
 vuecli3-cesium-config
+(webpack.base.config.js是cli2.x配置)
 
 ## 1. cli create 
 
@@ -18,3 +20,6 @@ var Color = require('cesium/Core/Color');
 import Cesium from 'cesium/Cesium';
 import Color from 'cesium/core/Color';
 ```
+## 3.VsCode智能提示
+jsconfig.json
+
