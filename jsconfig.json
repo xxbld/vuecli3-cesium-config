@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "target": "ES6",
+        "module": "commonjs"
+    },
+    "files": [
+        // 提供cesium智能提示
+        "index.d.ts"
+    ],
+    "include": [
+        "./src"
+    ]
+}
